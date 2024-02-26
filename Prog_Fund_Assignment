@@ -1,0 +1,142 @@
+from datetime import datetime
+
+class Passenger:
+    def __init__(self, passenger_id, name, passport_number):
+        self.__passenger_id = passenger_id
+        self.__name = name
+        self.__passport_number = passport_number
+
+    # Setters and Getters
+    def set_passenger_id(self, passenger_id):
+        self.__passenger_id = passenger_id
+
+    def get_passenger_id(self):
+        return self.__passenger_id
+
+    def set_name(self, name):
+        self.__name = name
+
+    def get_name(self):
+        return self.__name
+
+    def set_passport_number(self, passport_number):
+        self.__passport_number = passport_number
+
+    def get_passport_number(self):
+        return self.__passport_number
+
+    # Additional Methods
+    def update_details(self): # To update passenger details
+        pass
+
+
+class AirportStaff:
+    def __init__(self, staff_id, name):
+        self.__staff_id = staff_id
+        self.__name = name
+
+    def set_staff_id(self, staff_id):
+        self.__staff_id = staff_id
+
+    def get_staff_id(self):
+        return self.__staff_id
+
+    def set_name(self, name):
+        self.__name = name
+
+    def get_name(self):
+        return self.__name
+
+    # Additional Methods
+    def issue_ticket(self): # To issue a new ticket
+        pass
+
+    def print_boarding_pass(self): # To print boarding pass
+        pass
+
+
+class Ticket:
+    def __init__(self, ticket_number, booking_date, issued_by):
+        self.__ticket_number = ticket_number
+        self.__booking_date = booking_date
+        self.__issued_by = issued_by
+
+    def set_ticket_number(self, ticket_number):
+        self.__ticket_number = ticket_number
+
+    def get_ticket_number(self):
+        return self.__ticket_number
+
+    def set_booking_date(self, booking_date):
+        self.__booking_date = booking_date
+
+    def get_booking_date(self):
+        return self.__booking_date
+
+    def set_issued_by(self, issued_by):
+        self.__issued_by = issued_by
+
+    def get_issued_by(self):
+        return self.__issued_by
+
+    # Additional Methods
+    def update_ticket(self): # To update ticket details
+        pass
+
+
+class Flight:
+    def __init__(self, flight_number, departure_details, arrival_details):
+        self.__flight_number = flight_number
+        self.__departure_details = departure_details
+        self.__arrival_details = arrival_details
+
+    def set_flight_number(self, flight_number):
+        self.__flight_number = flight_number
+
+    def get_flight_number(self):
+        return self.__flight_number
+
+    def set_departure_details(self, departure_details):
+        self.__departure_details = departure_details
+
+    def get_departure_details(self):
+        return self.__departure_details
+
+    def set_arrival_details(self, arrival_details):
+        self.__arrival_details = arrival_details
+
+    def get_arrival_details(self):
+        return self.__arrival_details
+
+    # Additional Methods
+    def update_flight_details(self): # To update flight details
+        pass
+
+
+class BoardingPass:
+    def __init__(self, pass_number, boarding_time, printed_by):
+        self.__pass_number = pass_number
+        self.__boarding_time = boarding_time
+        self.__printed_by = printed_by
+
+    def set_pass_number(self, pass_number):
+        self.__pass_number = pass_number
+
+    def get_pass_number(self):
+        return self.__pass_number
+
+    def set_boarding_time(self, boarding_time):
+        self.__boarding_time = boarding_time
+
+    def get_boarding_time(self):
+        return self.__boarding_time
+
+    def set_printed_by(self, printed_by):
+        self.__printed_by = printed_by
+
+    def get_printed_by(self):
+        return self.__printed_by
+
+    # Additional Methods
+    def generate_boarding_information(self): # To generate boarding information
+        pass
